@@ -1,0 +1,135 @@
+#navbarNav {
+    background-color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+#loading_container {
+    display: none;
+    width: 200px;
+    margin-top: 2%;
+    margin-left: 45%;
+    margin-right: auto;
+}
+
+.circular-progress {
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.spinner {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-top-color: #57adbf; /* Progress color */
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#company_container {
+    margin-top: 5%;
+    margin-left: 32%;
+    margin-right: auto;
+}
+
+#companies {
+    color: #000;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+#chartContainer {
+    height: 300px;
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 13%;
+    margin-right: auto;
+}
+
+.canvasjs-chart-canvas {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#table_container {
+    margin: 5% 30px 0 20px;
+    /* width: 100%; */
+}
+
+#para {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #2b2e63; /* --rihno */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+    border: 1px solid transparent; /* Set border color to transparent */
+    padding: 12px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #57adbf; /* --fountain-blue */
+    color: #fff; /* --white */
+}
+
+.table td {
+    background-color: #fff; /* --white2 */
+}
+
+.table tbody tr:nth-child(odd) td {
+    color: magenta; /* White color for odd rows */
+}
+
+.table tbody tr:nth-child(even) td {
+    background-color: blue; /* --white2 color for even rows */
+}
+
+/* Hover effect for rows */
+.table tbody tr:hover {
+    background-color: #798dc5; /* --ship-cove */
+    color: #fff; /* --white */
+}
+
+#download_data {
+    display: none;
+    margin-top: 30px;
+    margin-left: 42%;
+    margin-right: auto;
+}
+
+.get-data-btn {
+    background-color: #57adbf; /* Use your color */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 8px 18px; /* Adjust padding as needed */
+    border-radius: 5px; /* Adjust border radius for rounded corners */
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size as needed */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.get-data-btn:hover {
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\StockController;
+use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +26,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::post('/register', 'Auth\RegisterController@register')->name('register');
+// Route::post('/register', 'Auth\RegisterController@register')->name('register');
+
+
+// dashboard controller methods
+Route::get('/home/dashboard', [DashboardController::class, 'index'])->name('home.dashboard');
+Route::get('//home/dashboard/stocksearch', [DashboardController::class, 'index'])->name('dashboard.search');
+
+
+Route::get('/home/settings', [SettingsController::class, 'index'])->name('home.settings');
 
