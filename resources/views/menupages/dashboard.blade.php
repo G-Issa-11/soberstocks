@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active" style="margin-left: 50px;">
+            <li class="nav-item active" style="margin-left: 30px;">
               <a class="nav-link" href="#">Stock Time Series</a>
             </li>
             <li class="nav-item" style="margin-left: 50px">
@@ -35,6 +35,8 @@
           <option value="International Business Machine(IBM)"
             >International Business Machine (IBM)</option
           >
+          <option value="Google(GOOG)">Google (GOOG)</option>
+    <option value="Amazon(AMZN)">Amazon (AMZN)</option>
         </select>
         <button
           id="get_data"
