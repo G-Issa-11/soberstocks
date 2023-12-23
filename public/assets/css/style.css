@@ -1539,3 +1539,21 @@ textarea.input-field {
         height: 50px;
     }
 }
+
+/* this is for the update page */
+
+.btn-update {
+    background-color: #57adbf; /* Use your color */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 8px 18px; /* Adjust padding as needed */
+    border-radius: 5px; /* Adjust border radius for rounded corners */
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size as needed */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.btn-update:hover {
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

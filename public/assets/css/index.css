@@ -2,6 +2,7 @@
     background-color: white;
     padding: 10px;
     margin: 0;
+    border-left: 3.5px solid #57adbf;
 }
 
 #loading_container {
@@ -56,7 +57,10 @@
 }
 
 .canvasjs-chart-canvas {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 #table_container {
@@ -132,4 +136,44 @@
 .get-data-btn:hover {
     color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* settings page */
+.mt-4 {
+    margin-top: 1rem; /* You can adjust the margin-top as needed */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.profile-picture-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-picture {
+    width: 180px; /* Adjust the width of the profile picture as needed */
+    height: 180px; /* Adjust the height of the profile picture as needed */
+    border-radius: 50%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border: 4px solid #fff; /* Add a border with a color of your choice */
+}
+
+.delete-button {
+    color: #fff; /* Text color for the delete button */
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    left: 17px;
+    bottom: 40px;
+    background-color: #fff;
+}
+
+/* Style for the delete button on hover */
+.delete-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

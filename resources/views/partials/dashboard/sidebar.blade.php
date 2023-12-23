@@ -5,7 +5,12 @@
             <div class="user-welcome">
                 <div class="user-avatar">
                     <!-- Include the user's avatar image or use a default image -->
-                    <img src="{{ asset('assets/images/user-avatar.png') }}"  alt="User Avatar">
+                    @if(Auth::user()->profile_picture)
+    <img src="{{ asset('storage/' . Auth::user()->profile_picture) }}" alt="User Avatar">
+@else
+    <img src="{{ asset('assets/images/user-avatar.png') }}" alt="User Avatar">
+@endif
+
                 </div>
                 <div class="user-info">
                     <span class="user-name">{{ Auth::user()->name }}</span>
