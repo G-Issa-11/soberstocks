@@ -31,6 +31,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 // Dashboard page controller methods
 Route::get('/home/dashboard', [DashboardController::class, 'index'])->name('home.dashboard');
+Route::get('/home/dashboard/forex', [DashboardController::class, 'getForex'])->name('dashboard.forex');
 Route::get('//home/dashboard/stocksearch', [DashboardController::class, 'index'])->name('dashboard.search');
 
 

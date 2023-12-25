@@ -12,7 +12,7 @@
            -->
           <div class="sidebar-brand">
             <img
-              src="../assets/images/rodeo.svg"
+              src="{{asset('assets/images/rodeo.svg')}}"
               alt="website logo"
               class="w-logo"
             />

@@ -1,4 +1,4 @@
-var api = "demo"; // get your own api (https://www.alphavantage.co/support/#api-key)
+var api = "demo";
 var dps = [];
 var company = null;
 var symbol = null;
