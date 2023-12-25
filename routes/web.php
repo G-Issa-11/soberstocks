@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\StockController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\DashboardController;
@@ -42,3 +43,8 @@ Route::post('/home/settings/update-profile', [SettingsController::class, 'update
 Route::post('/home/settings/delete-profile-picture', [SettingsController::class, 'deleteProfilePicture'])->name('settings.deleteProfilePicture');
 
 
+// BLog page controller methods (postcontroller)
+Route::get('/home/blog', [PostController::class, 'index'])->name('home.blog');
+Route::post('/home/blog/post', [PostController::class, 'makePost'])->name('blog.makePost');
+Route::delete('/home/blog/delete-post/{post}', [PostController::class, 'deletePost'])->name('blog.deletePost');
+Route::put('/home/blog/update-post/{post}', [PostController::class, 'updatePost'])->name('blog.updatePost');

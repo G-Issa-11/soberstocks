@@ -1,0 +1,150 @@
+/* blog.css */
+
+/* Form container */
+.post-container {
+    max-width: 700px;
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the content in post-container */
+.post-container .content-center {
+    text-align: center;
+}
+
+/* Input fields */
+.post-container input[type="text"],
+.post-container input[type="textarea"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Post button */
+.post-container button,
+.post-actions .save-changes {
+    background-color: #57adbf; /* Use your color */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 8px 18px; /* Adjust padding as needed */
+    border-radius: 5px; /* Adjust border radius for rounded corners */
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size as needed */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    width: 80px;
+    font-weight: bold;
+}
+
+/* Hover effect for the button */
+.post-container button:hover,
+.post-actions .save-changes:hover {
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Post title */
+.post-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Post content */
+.post-container p {
+    margin-bottom: 15px;
+}
+
+/* Author information */
+.post-container .author-info {
+    font-style: italic;
+    color: #888;
+}
+
+/* Buttons for delete and update */
+.post-container .post-actions button.update-button {
+    margin-right: 5px;
+}
+
+/* Update form */
+.post-container .post-actions form.update-form {
+    margin-top: 10px;
+}
+
+/* blog.css */
+
+/* Post styling */
+.post {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Post title */
+.post h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Post content */
+.post p {
+    margin-bottom: 15px;
+}
+
+/* Author information */
+.post .author-info {
+    font-style: italic;
+    color: #888;
+}
+
+/* Buttons for delete and update */
+.post .post-actions i {
+    font-size: 24px; /* Adjust the size as needed */
+    margin-right: 5px;
+    cursor: pointer;
+    color: #333; /* Adjust the color as needed */
+}
+
+/* Update form */
+.post .post-actions form.update-form {
+    margin-top: 10px;
+}
+
+.editting-tools {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.editting-tools .material-icons.delete-icon {
+    color: #c82333;
+}
+
+.editting-tools .material-icons.edit-icon {
+    color: #57adbf;
+}
+
+.post-actions .save-changes {
+    width: 160px;
+    margin-top: 20px;
+}
+
+.post-actions input,
+.post-actions textarea {
+    padding: 15px;
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+}

@@ -38,8 +38,8 @@
               </a>
             </li>
           <li class="sidebar-list-item">
-            <a href="../pages/messages.html">
-              <span class="material-icons-outlined">chat</span> Chat
+            <a href="{{route('home.blog')}}">
+              <span class="material-icons-outlined">create</span> Blog
             </a>
           </li>
           <li class="sidebar-list-item">
