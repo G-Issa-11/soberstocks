@@ -9,6 +9,10 @@ class DashboardController extends Controller
 {
     public function index(Request $request)
     {
-        return view('menupages.dashboard');
+        return view('menupages.sts');
+    }
+
+    public function getForex() {
+        return view('menupages.forex');
     }
 }

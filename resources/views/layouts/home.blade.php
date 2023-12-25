@@ -4,10 +4,10 @@
   <body id="dashboard-body">
     <div class="grid-container">
       <!-- Header -->
-      @include('partials.dashboard.header')
+      @include('partials.home.header')
 
       <!-- Sidebar -->
-      @include('partials.dashboard.sidebar')
+      @include('partials.home.sidebar')
 
       <!-- Main content -->
       <div class="main-container" data-main-container>
@@ -15,6 +15,6 @@
         @yield('content')
       </div>
     </div>
-    <script src="../assets/js/common.js"></script>
+  <script src="{{asset('assets/js/common.js')}}"></script>
   </body>
 </html>
