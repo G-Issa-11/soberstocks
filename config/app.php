@@ -13,6 +13,8 @@ return [
     |
     */
 
+    'api_key' => env('API_KEY'),
+
     'name' => env('APP_NAME', 'Laravel'),
 
     /*

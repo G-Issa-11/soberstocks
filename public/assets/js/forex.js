@@ -1,4 +1,54 @@
-var api = "demo";
+// fetch currency names
+const apiKeyCurr = apiKeyCurrency;
+const endpoint = "https://open.er-api.com/v6/latest";
+
+// Currency dropdown elements
+const fromCurrencyDropdown = document.getElementById("from_currency");
+const toCurrencyDropdown = document.getElementById("to_currency");
+
+// Fetch currency names
+fetch(`${endpoint}?apikey=${apiKeyCurr}`)
+    .then(response => response.json())
+    .then(data => {
+        // Extract currency names from the API response
+        const currencies = Object.keys(data.rates);
+
+        // Set default currencies
+        const defaultFromCurrency = "USD"; // Change this to your desired default "From" currency
+        const defaultToCurrency = "ILS"; // Change this to your desired default "To" currency
+
+        // Populate the "From" dropdown with currency names
+        currencies.forEach(currency => {
+            const option = document.createElement("option");
+            option.value = currency;
+            option.textContent = currency;
+
+            // Set the default "From" currency
+            if (currency === defaultFromCurrency) {
+                option.selected = true;
+            }
+
+            fromCurrencyDropdown.appendChild(option);
+        });
+
+        // Populate the "To" dropdown with currency names
+        currencies.forEach(currency => {
+            const option = document.createElement("option");
+            option.value = currency;
+            option.textContent = currency;
+
+            // Set the default "To" currency
+            if (currency === defaultToCurrency) {
+                option.selected = true;
+            }
+
+            toCurrencyDropdown.appendChild(option);
+        });
+    })
+    .catch(error => console.error("Error fetching currency names:", error));
+
+//perform the exchange
+var api = apiKeyRate;
 var from_currency = null;
 var to_currency = null;
 var forex_dps = [];

@@ -31,4 +31,13 @@ $(document).ready(function() {
             }
         });
     });
+
+    $(".cancel-button").click(function(event) {
+        event.preventDefault();
+
+        var form = $(this).closest(".update-form");
+
+        // Reload the page to discard any unsaved changes
+        location.reload();
+    });
 });

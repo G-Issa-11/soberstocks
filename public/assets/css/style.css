@@ -257,12 +257,14 @@ h3 {
     line-height: 1.2;
     padding: 8px;
     transition: 0.25s ease;
+    text-decoration: none;
 }
 
 .navbar-link:hover,
 .navbar-link:focus {
     color: var(--rihno);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .header .btn {
@@ -370,8 +372,13 @@ h3 {
     margin-block-end: 8px;
     margin-block-start: 20px;
     font-size: 20px;
+    text-emphasis: none;
+    text-decoration: none;
 }
 
+.service-card .card-title:hover {
+    color: black;
+}
 .service-card .card-text {
     font-size: 1.3rem;
 }
@@ -428,6 +435,10 @@ h3 {
     background-position: center;
     background-attachment: fixed;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .cta::after {
@@ -1031,6 +1042,9 @@ textarea.input-field {
 .container-2 .forms-container form .input-field input::placeholder {
     color: #aaa;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-2 .btn {
@@ -1063,6 +1077,11 @@ textarea.input-field {
     justify-content: center;
 }
 
+.forms-container .social-media a {
+    text-emphasis: none;
+    text-decoration: none;
+}
+
 .forms-container .social-media i {
     height: 46px;
     width: 46px;
@@ -1075,12 +1094,12 @@ textarea.input-field {
     color: #333;
     font-size: 2.7rem;
     border-radius: 50%;
-    transition: 0.3s ease-in;
+    transition: 0.1s ease-in;
 }
 
 .forms-container .social-media i:hover {
-    color: var(--ship-cove);
-    border-color: var(--ship-cove);
+    color: var(--rihno);
+    border-color: var(--rihno);
 }
 
 .panels-container {

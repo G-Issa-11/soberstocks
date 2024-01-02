@@ -24,7 +24,7 @@
         <ul class="sidebar-list">
             <li class="sidebar-list-item">
                 <a href="{{ route('home.dashboard') }}">
-                    <span class="material-icons-outlined">dashboard</span> Dashboard
+                    <span class="material-icons-outlined">home</span> Home
                 </a>
             </li>            
           <li class="sidebar-list-item">

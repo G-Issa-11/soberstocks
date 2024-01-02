@@ -38,8 +38,6 @@
                             </form>
                             <i class="material-icons update-button edit-icon" data-post-id="{{ $post->id }}">edit</i>
                 </div>
-                
-
                 <form action="{{ route('blog.updatePost', ['post' => $post->id]) }}" method="POST"
                     class="update-form" data-post-id="{{ $post->id }}" style="display: none;">
                     @csrf
@@ -48,7 +46,11 @@
                     <input type="text" name="title" value="{{ $post->title }}">
                     <textarea name="content">{{ $post->content }}</textarea>
 
-                    <button class="save-changes" type="submit">Save Changes</button>
+                    {{-- <button class="save-changes" type="submit">Save Changes</button> --}}
+                    <div class="update-buttons">
+                            <button class="save-changes" type="submit">Save Changes</button>
+                            <a href="#" class="cancel-button">Cancel</a>
+                        </div>
                 </form>
             </div>
         @endif

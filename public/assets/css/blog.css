@@ -137,7 +137,7 @@
 
 .post-actions .save-changes {
     width: 160px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .post-actions input,
@@ -147,4 +147,19 @@
     margin-bottom: 10px;
     border-radius: 8px;
     border: 1px solid black;
+}
+
+.update-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.update-buttons .cancel-button {
+    text-decoration: underline;
+}
+
+.update-buttons .cancel-button:hover {
+    color: #c82333;
 }
