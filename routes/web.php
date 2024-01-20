@@ -7,6 +7,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\StockController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\WatchlistController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,3 +49,9 @@ Route::get('/home/blog', [PostController::class, 'index'])->name('home.blog');
 Route::post('/home/blog/post', [PostController::class, 'makePost'])->name('blog.makePost');
 Route::delete('/home/blog/delete-post/{post}', [PostController::class, 'deletePost'])->name('blog.deletePost');
 Route::put('/home/blog/update-post/{post}', [PostController::class, 'updatePost'])->name('blog.updatePost');
+
+
+// Watchlist controller method
+Route::get('/home/watchlist', [WatchlistController::class, 'index'])->name('home.watchlist');
+Route::delete('/home/watchlist/remove-item{item}', [WatchlistController::class, 'removeFromWatchlist'])->name('watchlist.remove');
+Route::post('/home/watchlist/add', [WatchlistController::class, 'addToWatchlist'])->name('watchlist.add');

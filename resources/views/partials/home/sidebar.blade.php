@@ -28,12 +28,12 @@
                 </a>
             </li>            
           <li class="sidebar-list-item">
-            <a href="../pages/watchlist.html">
+            <a href="{{ route('home.watchlist') }}">
               <span class="material-icons-outlined">favorite</span> Watchlist
             </a>
           </li>
           <li class="sidebar-list-item">
-              <a href="../pages/messages.html">
+              <a href="https://colab.research.google.com/drive/1MfWms7AIKKZaP1G7c2SwlHoXQohJcsby#scrollTo=9C4aiLV8nJU7"  target="_blank">
                 <span class="material-icons-outlined">trending_up</span> Prediction System
               </a>
             </li>

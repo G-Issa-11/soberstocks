@@ -28,7 +28,7 @@
                         <ion-icon name="chatbox"></ion-icon>
                     </div>
                     <h3 class="h3">
-                        <a href="#" class="card-title">Explainable AI</a>
+                        <a href="#" class="card-title">Real Time Predictions</a>
                     </h3>
                     <p class="card-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -42,7 +42,7 @@
                         <ion-icon name="chatbox"></ion-icon>
                     </div>
                     <h3 class="h3">
-                        <a href="#" class="card-title">Real Time Predictions</a>
+                        <a href="#" class="card-title">Financial Services</a>
                     </h3>
                     <p class="card-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -56,7 +56,7 @@
                         <ion-icon name="chatbox"></ion-icon>
                     </div>
                     <h3 class="h3">
-                        <a href="#" class="card-title">Expert Input</a>
+                        <a href="#" class="card-title">Blog Section</a>
                     </h3>
                     <p class="card-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
