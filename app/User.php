@@ -40,4 +40,9 @@ class User extends Authenticatable
     public function posts() {
         return $this->hasMany(Post::class, 'user_id');
     }
+
+    public function watchlistItems()
+    {
+        return $this->hasMany(WatchlistItem::class);
+    }
 }
