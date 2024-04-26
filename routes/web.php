@@ -8,6 +8,7 @@ use App\Http\Controllers\StockController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\WatchlistController;
+use App\Http\Controllers\PredictionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,3 +56,9 @@ Route::put('/home/blog/update-post/{post}', [PostController::class, 'updatePost'
 Route::get('/home/watchlist', [WatchlistController::class, 'index'])->name('home.watchlist');
 Route::delete('/home/watchlist/remove-item{item}', [WatchlistController::class, 'removeFromWatchlist'])->name('watchlist.remove');
 Route::post('/home/watchlist/add', [WatchlistController::class, 'addToWatchlist'])->name('watchlist.add');
+
+
+
+// Predictions page controller method
+Route::get('/home/predict', [PredictionController::Class, 'index'])->name('home.predict');
+// Route::get('/home/predict/predict-stock', [PredictionController::Class, 'predictStock'])->name('predict.show');
