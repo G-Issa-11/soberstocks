@@ -18,12 +18,15 @@
                 <option value="GOOG">Alphabet Inc. (Google)</option>
                 <option value="MSFT">Microsoft Corporation</option>
                 <option value="AMZN">Amazon.com Inc.</option>
+                <option value="IBM">International Business Machines </option>
+                
             </select>
             <!-- Hidden fields for company name -->
             <input type="hidden" name="company_name" id="companyName" value="">
         </div>
         <button type="submit" class="get-data-btn">Add to Watchlist</button>
     </form>
+
 
     @if (count($watchlistItems) > 0)
     <!-- Table for existing watchlist items -->
@@ -33,7 +36,7 @@
             <tr>
                 <th>Company Name</th>
                 <th>Symbol</th>
-                <th>Real Stock Price</th>
+                {{-- <th>Real Stock Price</th> --}}
                 <th>Predicted Stock Price</th>
                 <th>Action</th>
             </tr>
@@ -44,8 +47,12 @@
                 <tr>
                     <td>{{ $item->company_name }}</td>
                     <td>{{ $item->symbol }}</td>
-                    <td>{{-- Real Stock Price Placeholder (replace with actual value) --}} --</td>
-                    <td>{{-- Predicted Stock Price Placeholder (replace with actual value) --}} --</td>
+                    {{-- <td>Real Stock Price Placeholder (replace with actual value) --</td> --}}
+                    <td>@if ($item->symbol=== 'IBM')
+                        {{$predictedClosePrice}}
+                    @else
+                        --
+                    @endif</td>
                     <td>
                         <form action="{{ route('watchlist.remove', ['item' => $item->id]) }}" method="POST" style="display: inline;">
                             @csrf
